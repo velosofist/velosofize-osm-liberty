@@ -6,6 +6,14 @@ A free Maplibre and Mapbox GL basemap style for everyone with complete liberty t
 
 **[Preview OSM Liberty with Maputnik](https://maplibre.org/maputnik/?style=https://maputnik.github.io/osm-liberty/style.json)**
 
+## Notes about the current fork
+
+This fork will be used primarily for generation of sprites for the Velosofize project.
+
+It uses [Material Symbols](https://fonts.google.com/icons) provided by Google, licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+Generation command: `npm run build_sprites`
+
 ## Usage
 
 You can use the style in your Maplibre and Mapbox GL maps.
