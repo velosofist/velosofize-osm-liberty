@@ -2,6 +2,8 @@ import os
 import re
 import sys
 
+# Usage: python3 symbol_to_svg.py grocery "#666666"
+
 def process_icon(input_path, output_path, circle_color):
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
@@ -70,8 +72,8 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         sys.exit(1)
         
-    in_file = os.path.join("svgs/material_symbols", sys.argv[1] + ".svg")
-    out_file = os.path.join("svgs/svgs_iconset", sys.argv[1] + ".svg")
+    in_file = os.path.join("../svgs/material_symbols", sys.argv[1] + ".svg")
+    out_file = os.path.join("../svgs/svgs_iconset", sys.argv[1] + ".svg")
     color = sys.argv[2] if len(sys.argv) > 2 else "#D31515"
 
     process_icon(in_file, out_file, color)
